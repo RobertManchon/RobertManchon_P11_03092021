@@ -5,6 +5,10 @@ import Header from "../header/header";
 import Footer from "../footer/footer";
 
 import HomePage from "../../views/homepage";
+import AboutPage from '../../views/aboutpage'
+
+
+
 
 function App() {
 	return (
@@ -16,6 +20,7 @@ function App() {
 						<HomePage />
 					</Route>
 					<Route exact path='/About'>
+						<AboutPage />
 					</Route>
 				</Switch>
 				<Footer />

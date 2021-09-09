@@ -5,14 +5,14 @@
 
 .heroBannerImg {
     width: 100%;
-    height: 13.9375rem;
+    height: 14rem;
     object-fit: cover;
-    border-radius: 1.5625rem;
+    border-radius: 1.6rem;
 }
 
 .heroBannerWrapper {
-    height: 13.9375rem;
-    border-radius: 1.5625rem;
+    height: 14rem;
+    border-radius: 1.57rem;
     background-color: rgba(0,0,0,.4);
     position: absolute;
     top: 0%;
