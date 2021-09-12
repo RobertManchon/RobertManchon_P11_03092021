@@ -5,12 +5,15 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: rgba(226, 226, 224, 0.541);
+    border-radius: 1.57rem;
+    margin: 2rem 4rem;
 }
 
 .galleryApartmentBox>img {
     width: 21.25rem;
     height: 21.25rem;
-    border-radius: 0.625rem;
+    border-radius: 0.62rem;
     object-fit: cover;
     margin-bottom: 2rem;
 }
@@ -28,7 +31,7 @@
     width: 18.75rem;
     height: 3.25rem;
     line-height: 142.6%;
-    font-size: 1.125rem;
+    font-size: 1.12rem;
     font-weight: 500;
 }
 
@@ -44,20 +47,22 @@
 @media screen and (max-width: 650px) {
     .galleryApartmentCard {
         padding: 0;
+        background-color: white;
+        margin: 2rem;
     }
 
     .galleryApartmentBox>img {
         width: 100%;
-        height: 15.9375rem;
+        height: 15.94rem;
     }
 
     .galleryOpacityDiv {
         width: 100%;
-        height: 15.9375rem;
+        height: 15.94rem;
     }
 
     .galleryApartmentBox>h2 {
         width: 80%;
-        line-height: 1.5625rem;
+        line-height: 1.56rem;
     }
 }

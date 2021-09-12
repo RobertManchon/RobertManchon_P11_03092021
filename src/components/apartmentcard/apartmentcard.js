@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import './apartmentcard.css';
-import {data} from '../../datas/data';
 
 class ApartmentCard extends Component {
+    getImg = () => {
+        return <img src={this.props.cover} alt={this.props.title} className='galleryApartmentImg'/>
+    }
+
+    getTitle = () => {
+        return <h2>{this.props.title}</h2>
+    }
+
     render() {
         return (
-            <section className="galleryApartmentCard">
-                {data.map(apartment => {
-                    return (
-                        <article>
-                        <Link to={`/apartment/${apartment.id}`} key={apartment.id} className='galleryApartmentBox'>
-                            <img src={apartment.cover} alt={apartment.title} className='galleryApartmentImg'/>
-                            <div className="galleryOpacityDiv"></div>
-                            <h2>{apartment.title}</h2>
-                        </Link>
-                        </article>
-                    )
-                })}
-            </section>
+            <article>
+                <Link to={`/apartment/${this.props.id}`} key={this.props.id} className='galleryApartmentBox'>
+                    {this.getImg()}
+                    <div className="galleryOpacityDiv"></div>
+                    {this.getTitle()}
+                </Link>
+            </article>
         )
     }
 }

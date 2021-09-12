@@ -4,13 +4,21 @@ import './footer.css';
 import LogoFooter from '../../assets/logoFooter.png'
 
 class Footer extends Component {
+    getImg = () => {
+        return <img src={LogoFooter} alt="Kasa Logo Footer" />
+    }
+
+    getText = () => {
+        return <p>© 2021 Kasa. Tous droits réservés</p>
+    }
+
     render() {
         return (
             <footer>
                 <Link to="/">
-                    <img src={LogoFooter} alt="Kasa Logo Footer" />
+                    {this.getImg()}
                 </Link>
-                    <p>© 2021 Kasa. Tous droits réservés</p>
+                    {this.getText()}
             </footer>
         )
     }

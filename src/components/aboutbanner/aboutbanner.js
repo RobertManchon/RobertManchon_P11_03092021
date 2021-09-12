@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
-import './aboutbanner.css';
 import about from '../../assets/about.jpeg';
 
 class AboutBanner extends Component {
+    getImg = () => {
+        return <img src={about} alt='aboutBannerImg' className='aboutBannerImg'></img>
+    }
+
     render() {
         return (
             <section className='aboutBanner'>
-                <img src={about} alt='aboutBannerImg' className='aboutBannerImg'></img>
+                {this.getImg()}
                 <div className='aboutBannerWrapper'></div>
             </section>
         )
@@ -14,3 +17,4 @@ class AboutBanner extends Component {
 }
 
 export default AboutBanner;
+

@@ -4,15 +4,29 @@ import Logo from '../../assets/logo.png';
 import './header.css';
 
 class Header extends Component {
+    getLogo = () => {
+        return (
+            <Link to='/'>
+                <img src={Logo} alt='logoHeader' className="logoHeader"></img>
+            </Link>
+        )
+    }
+
+    getLinkHomePage = () => {
+        return <Link to="/" className="linkHomePageHeader">Accueil</Link>
+    }
+
+    getLinkAboutPage = () => {
+        return <Link to="/About" className="linkAboutPageHeader">A propos</Link> 
+    }
+
     render() {
         return (
             <header>
-                <Link to='/'>
-                    <img src={Logo} alt='logoHeader' className="logoHeader"></img>
-                </Link>
+                {this.getLogo()}
                 <nav className="navBarHeader">
-                    <Link to="/" className="linkHomePageHeader">Accueil</Link>
-                    <Link to="/About" className="linkAboutPageHeader">A propos</Link> 
+                    {this.getLinkHomePage()}
+                    {this.getLinkAboutPage()}
                 </nav>
             </header>
         )
