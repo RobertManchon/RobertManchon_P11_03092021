@@ -46,8 +46,8 @@ header {
 
     .linkHomePageHeader,
     .linkAboutPageHeader {
-        margin: 0rem;
         font-size: 0.75rem;
+        margin: 0;
     }
 
     .linkHomePageHeader {

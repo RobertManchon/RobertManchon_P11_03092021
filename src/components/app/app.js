@@ -1,34 +1,39 @@
-import React from "react";
+import React ,{Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import '../../index.css';
 import {data} from '../../datas/data';
 import Header from "../header/header";
 import Footer from "../footer/footer";
-
 import HomePage from "../../views/homepage/homepage";
 import AboutPage from '../../views/aboutpage/aboutpage';
 import ApartmentPage from "../../views/apartmentpage/apartmentpage";
+import Error404 from "../error404/error404";
 
-function App() {
-  return (
-    <Router>
-    <div className="App">
-      <Header />
-      <Switch>
-        <Route exact path='/'>
-            <HomePage />
-        </Route>
-        <Route exact path="/apartment/:id" render={(props) => (
-            <ApartmentPage {...props} apartments={data} />
-            )}/>
-        <Route exact path='/About'>
-          <AboutPage />
-        </Route>
-      </Switch>
-      <Footer />
-    </div>
-    </Router>
-  );
+class App extends Component {
+  render() {
+    return (
+        <Router>
+          <div className="App">
+            <Header />
+            <Switch>
+              <Route exact path='/'>
+                <HomePage />
+              </Route>
+              <Route exact path="/apartment/:id" render={(props) => (
+                  <ApartmentPage {...props} apartments={data} />
+              )}/>
+              <Route exact path='/About'>
+                <AboutPage />
+              </Route>
+              <Route>
+                <Error404 />
+              </Route>
+            </Switch>
+            <Footer />
+          </div>
+        </Router>
+    );
+  }
 }
 
 export default App;

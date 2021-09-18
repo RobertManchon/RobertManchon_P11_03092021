@@ -2,21 +2,13 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 class ApartmentCard extends Component {
-    getImg = () => {
-        return <img src={this.props.cover} alt={this.props.title} className='galleryApartmentImg'/>
-    }
-
-    getTitle = () => {
-        return <h2>{this.props.title}</h2>
-    }
-
     render() {
         return (
             <article>
-                <Link to={`/apartment/${this.props.id}`} key={this.props.id} className='galleryApartmentBox'>
-                    {this.getImg()}
+                <Link to={`/apartment/${this.props.id}`} className='galleryApartmentBox'>
+                    <img src={this.props.cover} alt={this.props.title} className='galleryApartmentImg'/>
                     <div className="galleryOpacityDiv"></div>
-                    {this.getTitle()}
+                    <h2>{this.props.title}</h2>
                 </Link>
             </article>
         )

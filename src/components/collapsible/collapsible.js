@@ -25,6 +25,16 @@ class Collapsible extends Component {
     }
 
     getCollapsibleContent = () => {
+        if (Array.isArray(this.props.content)) {
+            return (
+                <div className={`collapsibleContent ${this.state.className}`}>
+                    {this.props.content.map((item, index) => (
+                        <p key={`item-${index}`}>{item}</p>
+                    ))}
+                </div>
+            )
+        }
+
         return (
             <div className={`collapsibleContent ${this.state.className}`}>
                 <p>{this.props.content}</p>

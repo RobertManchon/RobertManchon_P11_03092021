@@ -1,10 +1,14 @@
 .fa-star {
+    color: #E3E3E3;
+    font-size: 1.5rem;
+}
+.fa-star.colored {
     color: #FF6060;
     font-size: 1.5rem;
 }
-
 @media screen and (max-width: 650px) {
-    .fa-star {
+    .fa-star,
+    .fa-star.colored {
         font-size: 1rem;
     }
 }

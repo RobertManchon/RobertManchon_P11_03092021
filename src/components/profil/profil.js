@@ -1,12 +1,11 @@
 import React, {Component} from "react";
-import about from '../../assets/about.jpeg';
 
 class Profil extends Component {
     render() {
         return (
             <div className="apartmentProfil">
-                <p className="apartmentNameHost">Nathalie Jean</p>
-                <img className="apartmentImgHost" alt="" src={about} />
+                <p className="apartmentNameHost">{this.props.host.name}</p>
+                <img className="apartmentImgHost" alt="" src={this.props.host.picture} />
             </div>
         )
     }

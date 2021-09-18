@@ -8,7 +8,7 @@
     margin: 0 1rem 0 0;
     font-size: 1.12rem;
     color: #FF6060;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .apartmentImgHost {
@@ -24,7 +24,7 @@
         display: flex;
         justify-content: flex-end;
         right: 2rem;
-        bottom: 12.5rem;
+        top: 30.5rem;
     }
 
     .apartmentNameHost {
