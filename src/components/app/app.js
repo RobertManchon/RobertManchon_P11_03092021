@@ -26,7 +26,7 @@ class App extends Component {
             />
             <Route exact path='/About'>
               <AboutPage />
-            /* WIP 27-0 */
+            {/*WIP 27-0 */}
             </Route>
             {/*<Route path='/*'>*/}
             {/*  <Error404 />*/}
