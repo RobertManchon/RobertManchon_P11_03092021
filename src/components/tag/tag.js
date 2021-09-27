@@ -1,9 +1,9 @@
-import React, {Component} from "react";
+import React, { Component } from 'react'
 
 class Tag extends Component {
-    render() {
-        return <span className="apartmentTag">{this.props.tag}</span>
-    }
+  render () {
+    return <span className='apartmentTag'>{this.props.tag}</span>
+  }
 }
 
-export default Tag;
+export default Tag

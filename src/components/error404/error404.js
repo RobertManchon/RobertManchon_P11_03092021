@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./error404.css";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './error404.css'
 
 class Error404 extends React.Component {
-    render() {
-        return (
-            <main className="error404">
-                <h1 className="error404StatusCode">404</h1>
-                <h2 className="error404Txt">Oups ! La page que vous demandez n'existe pas.</h2>
-                <Link className="error404LinkToHome" to="/">Retourner sur la page d'accueil</Link>
-            </main>
-                );
-            }
+  render () {
+    return (
+      <main className='error404'>
+        <h1 className='error404StatusCode'>404</h1>
+        <h2 className='error404Txt'>Oups ! La page que vous demandez n'existe pas.</h2>
+        <Link className='error404LinkToHome' to='/'>Retourner sur la page d'accueil</Link>
+      </main>
+    )
+  }
 }
 
-export default Error404;
+export default Error404

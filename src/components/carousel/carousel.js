@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import noPictures from '../../assets/noPictures.png';
+import React, {Component} from "react"
+import noPictures from '../../assets/noPictures.png'
 
 class Carousel extends Component {
     constructor(props) {
@@ -63,4 +63,4 @@ class Carousel extends Component {
     }
 }
 
-export default Carousel;
+export default Carousel

@@ -1,14 +1,14 @@
-import React, {Component} from "react";
+import React, { Component } from 'react'
 
 class Profil extends Component {
-    render() {
-        return (
-            <div className="apartmentProfil">
-                <p className="apartmentNameHost">{this.props.host.name}</p>
-                <img className="apartmentImgHost" alt="" src={this.props.host.picture} />
-            </div>
-        )
-    }
+  render () {
+    return (
+      <div className='apartmentProfil'>
+        <p className='apartmentNameHost'>{this.props.host.name}</p>
+        <img className='apartmentImgHost' alt='' src={this.props.host.picture} />
+      </div>
+    )
+  }
 }
 
-export default Profil;
+export default Profil

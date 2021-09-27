@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import './aboutcollapsible.css';
+import React, {Component} from 'react'
+import './aboutcollapsible.css'
 
 class AboutCollapsible extends Component {
-    state = {
+    state =  {
         show : false,
     }
 
@@ -28,5 +28,4 @@ class AboutCollapsible extends Component {
         )
     }
 }
-
-export default AboutCollapsible;
+export default AboutCollapsible
