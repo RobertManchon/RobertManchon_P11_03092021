@@ -11,11 +11,11 @@ class Header extends Component {
         <Link to='/'>
           <img src={Logo} alt='logoHeader' className='logoHeader' />
         </Link>
-        <nav className='navBarHeader'>
+        <nav id='navbar'>
 
-          <NavLink to='/' className='linkHomePageHeader'>Accueil</NavLink>
+          <NavLink to='/' className='nav-menu' exact={true}>Accueil</NavLink>
 
-          <NavLink to='/About' className='linkAboutPageHeader'>A propos</NavLink>
+          <NavLink to='/About' className='nav-menu'>A propos</NavLink>
 
 
         </nav>

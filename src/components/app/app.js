@@ -24,13 +24,12 @@ class App extends Component {
                 <ApartmentPage {...props} apartments={data} />
               )}
             />
-            <Route exact path='/About'>
-              <AboutPage />
+            <Route path='/about' component={AboutPage} />
+            {/*<Route exact path='/about'>*/}
+            {/*  <AboutPage />*/}
             {/*WIP 27-0 */}
-            </Route>
-            {/*<Route path='/*'>*/}
-            {/*  <Error404 />*/}
             {/*</Route>*/}
+
             <Route component={error404} />
           </Switch>
           <Footer />

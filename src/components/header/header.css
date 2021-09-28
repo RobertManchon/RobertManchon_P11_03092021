@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 header {
     width: 100%;
     height: 7rem;
@@ -12,77 +16,154 @@ header {
     padding: 4rem;
 }
 
-.linkHomePageHeader,
-.linkAboutPageHeader {
-    list-style: none;
-    margin: 0;
+#navbar {
+    width: 140px;
+    height: 17px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 25.53%;
+    right: 20px;
+}
+.nav-menu {
+    font-size: 12px;
     color: #FF6060;
-    cursor: pointer;
-    font-size: 1.5rem;
-    text-decoration: none;
-
-
+    text-transform: uppercase;
 }
 
-.linkHomePageHeader {
-    padding-right: 2rem;
-    /*text-decoration-line: underline;*/
-}
-
-.linkAboutPageHeader {
-    padding-right: 4rem;
+.nav-menu:hover {
+    color: #ff9999;
     text-decoration: none;
 }
 
-.linkHomePageHeader:focus,
-.linkAboutPageHeader:focus {
-    text-decoration-line: underline;
-}
-
-@media screen and (max-width: 650px) {
-    header {
-        padding: 0;
-    }
-
-    .logoHeader {
-        padding: 2rem;
-    }
-
-    .linkHomePageHeader,
-    .linkAboutPageHeader {
-        font-size: 0.75rem;
-        margin: 0;
-    }
-
-    .linkHomePageHeader {
-        padding-right: 1rem;
-    }
-
-    .linkAboutPageHeader {
-        padding-right: 2rem;
-    }
+.nav-menu.active {
+    color: #FF6060;
+    text-decoration: underline;
 }
 /******************************************/
 /* WIP 27 -1*/
-@media screen and (min-width: 200px) and (max-width:500px){
-    .linkHomePageHeader,
-    .linkAboutPageHeader {
+@media screen and (min-width: 200px) and (max-width:281px){
+    #navbar {
+        right: 20px;
+        width: 323px;
+    }
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        color: #FF6060;
+        cursor: pointer;
+        font-size: 0.6rem;
+}
+    .logoHeader {
+     padding: 1rem;
+     }
+}
+@media screen and (min-width: 282px) and (max-width:375px){
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        color: #FF6060;
+        cursor: pointer;
+        font-size: 0.7rem;
+    }
+    .logoHeader {
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 375px) and (max-width:500px){
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        color: #FF6060;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+    .logoHeader {
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 501px) and (max-width:600px){
+    #navbar {
+        right: 30px;
+        width: 323px;
+    }
+    .nav-menu {
         list-style: none;
         margin: 0;
         color: #FF6060;
         cursor: pointer;
         font-size: 1rem;
-        text-decoration: none;
     }
     .logoHeader {
         padding: 1rem;
     }
-    .linkHomePageHeader {
-        padding-right: 0.5rem;
+}
+@media screen and (min-width: 601px) and (max-width:769px){
+    #navbar {
+        right: 30px;
+        width: 323px;
     }
-
-    .linkAboutPageHeader {
-        padding-right: 1rem;
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        color: #FF6060;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+    .logoHeader {
+        padding: 1rem;
     }
 }
+
+@media screen and (min-width: 770px) and (max-width:1025px){
+    #navbar {
+        right: 30px;
+        width: 323px;
+    }
+    .nav-menu {
+        list-style: none;
+        margin: 0;
+        color: #FF6060;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+    .logoHeader {
+        padding: 1rem;
+    }
+}
+
+
+@media all and (min-width: 1200px) {
+    #navbar {
+        width: 309px;
+        height: 34px;
+    }
+
+    .nav-menu {
+        font-size: 24px;
+        text-transform: unset;
+    }
+}
+
+/*@media screen and (min-width: 200px) and (max-width:500px){*/
+/*    .linkHomePageHeader,*/
+/*    .linkAboutPageHeader {*/
+/*        list-style: none;*/
+/*        margin: 0;*/
+/*        color: #FF6060;*/
+/*        cursor: pointer;*/
+/*        font-size: 1rem;*/
+/*        text-decoration: none;*/
+/*    }*/
+/*    .logoHeader {*/
+/*        padding: 1rem;*/
+/*    }*/
+/*    .linkHomePageHeader {*/
+/*        padding-right: 0.5rem;*/
+/*    }*/
+
+/*    .linkAboutPageHeader {*/
+/*        padding-right: 1rem;*/
+/*    }*/
+/*}*/
 /******************************************/
